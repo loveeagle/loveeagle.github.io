@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="顺序结构&amp;emsp;&amp;emsp;顺序结构是最简单的程序结构，也是最常用的程序结构，只要按照解决问题的顺序写出相应的语句就行，顺序结构的执行顺序是自上而下、依次执行。
+
+类比生活中，我们做什么事情都是按一定顺序做的
+比如刷牙这件事，要有如下的顺序：挤牙膏→刷牙→漱口、冲洗掉泡沫
+用编程的表示如下：
+1"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="明德·黄潮涛"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="顺序结构"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="顺序结构&amp;emsp;&amp;emsp;顺序结构是最简单的程序结构，也是最常用的程序结构，只要按照解决问题的顺序写出相应的语句就行，顺序结构的执行顺序是自上而下、依次执行。
+
+类比生活中，我们做什么事情都是按一定顺序做的
+比如刷牙这件事，要有如下的顺序：挤牙膏→刷牙→漱口、冲洗掉泡沫
+用编程的表示如下：
+1"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="洛谷题解"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://loveeagle.github.ioimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://loveeagle.github.ioimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>顺序结构 - 洛谷题解</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">loveeagle</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                归档
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                标签
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                分类
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                关于
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/loveeagle/loveeagle.github.io">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>顺序结构</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2021-10-21
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+<a href="/categories/C-基础/">C++基础</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="顺序结构"><a href="#顺序结构" class="headerlink" title="顺序结构"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/training/100#information">顺序结构</a></h1><p>&emsp;&emsp;顺序结构是最简单的程序结构，也是最常用的程序结构，只要按照解决问题的顺序写出相应的语句就行，顺序结构的执行顺序是自上而下、依次执行。</p>
+<blockquote>
+<p>类比生活中，我们做什么事情都是按一定顺序做的</p>
+<p>比如刷牙这件事，要有如下的顺序：挤牙膏→刷牙→漱口、冲洗掉泡沫</p>
+<p>用编程的表示如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;挤牙膏&quot;</span> &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;刷牙&quot;</span> &lt;&lt; endl;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;漱口、冲洗掉泡沫&quot;</span> &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>程序自上而下、依次执行，最后输出为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">挤牙膏</span><br><span class="line">刷牙</span><br><span class="line">漱口、冲洗掉泡沫</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>&emsp;&emsp;在本题单中，除了考察顺序结构之外，还考察很多C++语言基础知识：运算符的使用、数据类型的使用、浮点数精度问题等等。考察内容多且基础，对于刚入门的同学，一定要仔细学习，清楚每一条语句的作用，这样才能为后续的学习打下更牢固的基础。对于有一定基础的同学，可以尝试学习较高难度的<strong>数据类型转换</strong>、<strong>二进制</strong>等内容，使用多种方式去解题。</p>
+<h2 id="基本输入、输出、加减乘除"><a href="#基本输入、输出、加减乘除" class="headerlink" title="基本输入、输出、加减乘除"></a>基本输入、输出、加减乘除</h2><p>&emsp;&emsp;计算机最基本功能就是计算，计算机要能够接受我们输入的内容，进行计算，并输出结果。所以编程的第一步就是要学会如何让计算机能够<strong>输入</strong>、<strong>输出</strong>、进行<strong>加减乘除计算</strong>。代表题目：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1000">P1000 超级玛丽游戏</a>、<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1001">P1001 A+B Problem</a>、<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5703">P5703【深基2.例5】苹果采购</a>、<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5705">P5705【深基2.例7】数字反转</a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 超级玛丽游戏</span></span><br><span class="line"><span class="comment">// printf() 是C语言的输出语句，C++由C语言发展而来，能够兼容C语言的所有特性与基本函数库</span></span><br><span class="line"><span class="comment">// &#x27;\n&#x27;是一个转义字符，含义是换行。一个&#x27;\n&#x27;换一行，两个&#x27;\n&#x27;换两行，以此类推</span></span><br><span class="line"><span class="comment">// 除了&#x27;\n&#x27;能够换行之外，C++中endl也能够实现换行</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span> <span class="comment">//调用C语言基础函数库</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(</span><br><span class="line">    <span class="string">&quot;                ********\n&quot;</span></span><br><span class="line">    <span class="string">&quot;               ************\n&quot;</span></span><br><span class="line">    <span class="string">&quot;               ####....#.\n&quot;</span></span><br><span class="line">    <span class="string">&quot;             #..###.....##....\n&quot;</span></span><br><span class="line">    <span class="string">&quot;             ###.......######              ###            ###\n&quot;</span></span><br><span class="line">    <span class="string">&quot;                ...........               #...#          #...#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;               ##*#######                 #.#.#          #.#.#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;            ####*******######             #.#.#          #.#.#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;           ...#***.****.*###....          #...#          #...#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;           ....**********##.....           ###            ###\n&quot;</span></span><br><span class="line">    <span class="string">&quot;           ....****    *****....\n&quot;</span></span><br><span class="line">    <span class="string">&quot;             ####        ####\n&quot;</span></span><br><span class="line">    <span class="string">&quot;           ######        ######\n&quot;</span></span><br><span class="line">    <span class="string">&quot;##############################################################\n&quot;</span></span><br><span class="line">    <span class="string">&quot;#...#......#.##...#......#.##...#......#.##------------------#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;###########################################------------------#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;#..#....#....##..#....#....##..#....#....#####################\n&quot;</span></span><br><span class="line">    <span class="string">&quot;##########################################    #----------#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;#.....#......##.....#......##.....#......#    #----------#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;##########################################    #----------#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#\n&quot;</span></span><br><span class="line">    <span class="string">&quot;##########################################    ############\n&quot;</span></span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// A+B Problem</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a,b;</span><br><span class="line">    cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">    cout &lt;&lt; a+b &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 苹果采购</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b;<span class="comment">//定义变量</span></span><br><span class="line">	cin &gt;&gt; a &gt;&gt; b; <span class="comment">//输入</span></span><br><span class="line">	cout &lt;&lt; a*b &lt;&lt; endl; <span class="comment">//输出</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; <span class="comment">//程序结束，好习惯</span></span><br><span class="line"> &#125; </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 数字反转</span></span><br><span class="line"><span class="comment">// 本题如果只采用顺序结构，可以考虑使用C语言的标准输入输出语句：scanf()、printf()</span></span><br><span class="line"><span class="comment">// 思路是将我们输入的数字转换成多个字符，再将多个字符调换顺序输出</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">char</span> a, b, c, d;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%c%c%c.%c&quot;</span>, &amp;a, &amp;b, &amp;c, &amp;d);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%c.%c%c%c&quot;</span>, d, c, b, a);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>scanf()</code>、<code>printf()</code> 有格式化输入输出的功能，<code>scanf()</code>函数要配合取址符<code>&amp;</code>使用，才能将输入内容赋值给变量。</p>
+<p>通过格式字符，能在特定位置指定输出什么内容。比如<code>printf(&quot;%d是一个数&quot;,a)</code>的结果就是把 “%d” 的位置替换为变量a的值。</p>
+<p>通过格式化输出，还能指定输出小数点后的位数，比如 <code>printf(&quot;%.2f&quot;,a)</code> 的结果就是保留两位小数输出</p>
+<ul>
+<li><code>%d</code>：读入一个 3232 位有符号整数。</li>
+<li><code>%u</code>：读入一个 3232 位无符号整数。</li>
+<li><code>%lld</code>：读入一个 6464 位有符号整数。</li>
+<li><code>%llu</code>：读入一个 6464 位无符号整数。</li>
+<li><code>%f</code>：读入一个 <code>float</code> 类型。</li>
+<li><code>%lf</code>：读入一个 <code>double</code> 类型。</li>
+<li><code>%c</code>：读入一个 <code>char</code> 类型。</li>
+<li><code>%s</code>：读入一个字符串类型。</li>
+</ul>
+</blockquote>
+<h2 id="P5704【深基2-例6】字母转换"><a href="#P5704【深基2-例6】字母转换" class="headerlink" title="P5704【深基2.例6】字母转换"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5704">P5704【深基2.例6】字母转换</a></h2><p>&emsp;&emsp;看似简单的一道题目，可以使用很多不同的方法实现，包含的知识点也是非常多。先看代码。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">char</span> ch;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>,&amp;ch);<span class="comment">//输入单个字符 </span></span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>,<span class="built_in"><span class="keyword">char</span></span>(<span class="built_in"><span class="keyword">int</span></span>(ch)<span class="number">-32</span>));<span class="comment">//直接改大写输出 </span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>scanf()</code> 和 <code>printf()</code> 为输入和输出语句</p>
+<p><code>char</code> 关键字表示变量 ch 是一个<strong>字符类型</strong></p>
+<p><code>int(ch)</code> 表示将变量 ch 转换为一个<strong>整型类型</strong>数据</p>
+<p><code>int(ch)-32</code> 这个-32如何来？实际是通过<code>ASCII</code>表得到的。在计算机中，所有数据都是通过二进制进行表示。计算机科学家们制定了一个各类字符转为二进制的规范，称为编码。编码有很多种，常见的有 ASCII、GBK、Unicode等等。下图为ASCII编码表，表中可以看到，a 与 A差值为32，所以 A + 32 可以得到 a，a - 32 可以得到 A.</p>
+<p><code>char(int(ch)-32))</code> 整个语句的含义是将一个<strong>字符类型</strong>数据转换为<strong>整型类型</strong>数据，减去32后再将这个<strong>整型类型</strong>数据转换为<strong>字符类型</strong>。比如输入t，转换为整型数据后为116，再减去32得到84，最后转为字符型数据T。</p>
+</blockquote>
+<p><img src="D:\coach\public\img\ASCII表.jpg" alt="img"></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">char</span> a; <span class="comment">//定义一个字符</span></span><br><span class="line">	cin&gt;&gt;a; <span class="comment">//输入</span></span><br><span class="line">	cout&lt;&lt;(<span class="keyword">char</span>)(a-(<span class="string">&#x27;a&#x27;</span>-<span class="string">&#x27;A&#x27;</span>)); <span class="comment">// 记不住ASCII编码表没关系，可以通过小写字母减去大写字母得到差值</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;还能采用标准函数进行解题</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">char</span> s;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cin &gt;&gt; s;</span><br><span class="line">    cout &lt;&lt; (<span class="keyword">char</span>)<span class="built_in">toupper</span>(s);<span class="comment">//使用标准函数toupper()转为大写，除了转大写，还有tolower()函数可以转成小写</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/loveeagle/loveeagle.github.io" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2021 明德·黄潮涛<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
