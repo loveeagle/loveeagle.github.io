@@ -13,6 +13,9 @@
     
 
     
+        <meta name="description" content="数组&amp;emsp;&amp;emsp;在程序中，我们经常需要使用大量数据，数组就是一个可以存储大量数据的基础结构。在数组声明、定义过程中，会在内存中开辟一块连续空间，用于存储数据。使用数组数据，是通过数组的下标（或称索引）来完成的，比如a[2] = 3;就是给数组 a 第2个元素赋值为3。
+小鱼比可爱题目分析"/>
+    
 
     <!--Author-->
     
@@ -21,10 +24,13 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="洛谷题解"/>
+        <meta property="og:title" content="数组"/>
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="数组&amp;emsp;&amp;emsp;在程序中，我们经常需要使用大量数据，数组就是一个可以存储大量数据的基础结构。在数组声明、定义过程中，会在内存中开辟一块连续空间，用于存储数据。使用数组数据，是通过数组的下标（或称索引）来完成的，比如a[2] = 3;就是给数组 a 第2个元素赋值为3。
+小鱼比可爱题目分析"/>
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +38,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="article"/>
     
 
     <!--Page Cover-->
@@ -51,7 +57,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2021 - 洛谷题解</title>
+    <title>数组 - 洛谷题解</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -163,101 +169,74 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2021</h1>
+                <div class="post-heading">
+                    <h1>数组</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2021-10-26
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+<a href="/categories/C-基础/">C++基础</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
             
-                <div class="post-preview">
-    <a href="/C-基础/数组/">
-        <h1 class="post-title archive">
-            数组
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-26
-    </p>
-</div>
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/C-基础/分支结构/">
-        <h1 class="post-title archive">
-            分支结构
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-22
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="数组"><a href="#数组" class="headerlink" title="数组"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/training/103#problems">数组</a></h1><p>&emsp;&emsp;在程序中，我们经常需要使用大量数据，数组就是一个可以存储大量数据的基础结构。在数组声明、定义过程中，会在内存中开辟一块<strong>连续空间</strong>，用于存储数据。使用数组数据，是通过数组的下标（或称索引）来完成的，比如<code>a[2] = 3;</code>就是给数组 <code>a</code> 第2个元素赋值为3。</p>
+<h2 id="小鱼比可爱"><a href="#小鱼比可爱" class="headerlink" title="小鱼比可爱"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1428">小鱼比可爱</a></h2><h3 id="题目分析"><a href="#题目分析" class="headerlink" title="题目分析"></a>题目分析</h3><p>&emsp;&emsp;本题中，小鱼可以看到它左边的其他小鱼的可爱程度，然后计算有多少只小鱼不如自己可爱。那么我们可以设置一个数组，数组的中元素代表小鱼的可爱程度。第 <code>n</code> 个小鱼看到的是第 <code>0</code> ~ <code>n-1</code> 个小鱼的可爱程度，则计算有多少只小鱼不如自己可爱时，可以计算 第 <code>0</code> ~ <code>n-1</code> 个元素是否比第 <code>n</code> 个小鱼小。设置第二个数组，将结果保存在数组中，最终再输出结果数组的内容。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">int</span> n, a[<span class="number">100</span>], b[<span class="number">100</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">		cin &gt;&gt; a[i];</span><br><span class="line">	&#125;</span><br><span class="line">	b[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j = i - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--) &#123;</span><br><span class="line">			<span class="keyword">if</span> (a[i] &gt; a[j]) &#123;</span><br><span class="line">				b[i]++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">		cout &lt;&lt; b[i]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+                
+            </div>
+
+            <!-- Comments -->
             
-                <div class="post-preview">
-    <a href="/C-基础/顺序结构/">
-        <h1 class="post-title archive">
-            顺序结构
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-21
-    </p>
-</div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
             
-                <div class="post-preview">
-    <a href="/个人辅导/霍子羲/">
-        <h1 class="post-title archive">
-            霍子羲
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-20
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/uncategorized/hello-world/">
-        <h1 class="post-title archive">
-            Hello World
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-19
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr />

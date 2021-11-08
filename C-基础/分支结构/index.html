@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="分支结构&amp;emsp;&amp;emsp;在生活中我们经常遇上一些要选择的事，比如如果不下雨就去打球，否则就在家里看书。程序的执行也是一样，会根据不同的场合做出不同的动作。这时就需要使用分支结构。使用编程的方式表达上面的例子，可以这样编码。
+1234567891011include&amp;lt;iostream&amp;g"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="明德·黄潮涛"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="分支结构"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="分支结构&amp;emsp;&amp;emsp;在生活中我们经常遇上一些要选择的事，比如如果不下雨就去打球，否则就在家里看书。程序的执行也是一样，会根据不同的场合做出不同的动作。这时就需要使用分支结构。使用编程的方式表达上面的例子，可以这样编码。
+1234567891011include&amp;lt;iostream&amp;g"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="洛谷题解"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="http://loveeagle.github.ioimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="http://loveeagle.github.ioimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>分支结构 - 洛谷题解</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">loveeagle</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                归档
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                标签
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                分类
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                关于
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/loveeagle/loveeagle.github.io">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>分支结构</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2021-10-22
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+<a href="/categories/C-基础/">C++基础</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/training/101#information">分支结构</a></h1><p>&emsp;&emsp;在生活中我们经常遇上一些要选择的事，比如<code>如果不下雨就去打球，否则就在家里看书</code>。程序的执行也是一样，会根据不同的场合做出不同的动作。这时就需要使用分支结构。使用编程的方式表达上面的例子，可以这样编码。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">include&lt;iostream&gt;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    string weather = <span class="string">&quot;&quot;</span>;</span><br><span class="line">    cin &gt;&gt; weather;</span><br><span class="line">    <span class="keyword">if</span>(weather == <span class="string">&quot;不下雨&quot;</span>)&#123;</span><br><span class="line">    	cout &lt;&lt; <span class="string">&quot;打球&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;在家看书&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="数的性质"><a href="#数的性质" class="headerlink" title="数的性质"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5710">数的性质</a></h2><p>&emsp;&emsp;这题放到分支结构，当然可以使用分支结构来做。但是分支结构的代码太不简洁，<strong>我们的代码应该像诗一样简洁</strong>，所以可以这样写。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> value = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; value;</span><br><span class="line">    <span class="keyword">bool</span> nature1 = value % <span class="number">2</span> == <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">bool</span> nature2 = value &gt; <span class="number">4</span> &amp;&amp; value &lt;= <span class="number">12</span>;</span><br><span class="line">    cout &lt;&lt; (nature1 &amp;&amp; nature2) &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; (nature1 || nature2) &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; (nature1 ^ nature2) &lt;&lt; <span class="string">&#x27; &#x27;</span> &lt;&lt; !(nature1 || nature2) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>^</code> 运算符，进行异或运算时，符号两边值为同真同假时结果为假；符号两边值为一真一假时结果为真</li>
+<li>所以可以用异或运算来表达<strong>刚好有符合其中一个性质的数字</strong></li>
+</ul>
+<h2 id="闰年判断"><a href="#闰年判断" class="headerlink" title="闰年判断"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5711">闰年判断</a></h2><p>&emsp;&emsp;本题最主要的是分清闰年的判断方法，一句口诀</p>
+<ul>
+<li>四年一闰</li>
+<li>百年不闰</li>
+<li>四百年再闰</li>
+</ul>
+<p>&emsp;&emsp;如何把闰年判断方法转化为代码呢，使用取余（模）运算，如下</p>
+<ul>
+<li>四年一闰，能够被4整除的为闰年，<code>year % 4 == 0</code></li>
+<li>百年不闰，能够被100整除的不是闰年，<code>year % 100 != 0</code></li>
+<li>四百年再闰，能够被400整除的是闰年，<code>year % 400 == 0</code></li>
+</ul>
+<p>&emsp;&emsp;综合起来如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> year = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; year;</span><br><span class="line">    <span class="keyword">if</span>(year % <span class="number">4</span> == <span class="number">0</span> &amp;&amp; (year % <span class="number">100</span> != <span class="number">0</span> || year % <span class="number">400</span> == <span class="number">0</span>))&#123;</span><br><span class="line">        cout &lt;&lt; <span class="literal">true</span> &lt;&lt; endl;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        cout &lt;&lt; <span class="literal">false</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>思考一下，为什么要这样使用 &amp;&amp; 和 || 进行运算</p>
+</blockquote>
+<h2 id="Apples"><a href="#Apples" class="headerlink" title="Apples"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5712">Apples</a></h2><p>&emsp;&emsp;本题无难度，对于 0 或 1个苹果的输出单数形式的apple；对于多于 1 个苹果的输出复数形式的apples。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> apple = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; apple;</span><br><span class="line">    <span class="keyword">if</span>(apple &lt;= <span class="number">1</span>)&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Today, I ate &quot;</span> &lt;&lt; apple &lt;&lt; <span class="string">&quot; apple.\n&quot;</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Today, I ate &quot;</span> &lt;&lt; apple &lt;&lt; <span class="string">&quot; apples.\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="洛谷团队系统"><a href="#洛谷团队系统" class="headerlink" title="洛谷团队系统"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5713">洛谷团队系统</a></h2><ul>
+<li>在自己电脑配置n道题目花费时间为：n * 5</li>
+<li>在洛谷系统上配置n道题目花费时间为：n * 3 + 11</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n = <span class="number">0</span>, local = <span class="number">0</span>, luogu = <span class="number">0</span>;</span><br><span class="line">    cin &gt;&gt; n;</span><br><span class="line">    local = n * <span class="number">5</span>;</span><br><span class="line">    luogu = n * <span class="number">3</span> + <span class="number">11</span>;</span><br><span class="line">    <span class="keyword">if</span>(luogu &lt;= local)&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Luogu\n&quot;</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;Local\n&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="肥胖问题"><a href="#肥胖问题" class="headerlink" title="肥胖问题"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5714">肥胖问题</a></h2>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/loveeagle/loveeagle.github.io" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2021 明德·黄潮涛<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
