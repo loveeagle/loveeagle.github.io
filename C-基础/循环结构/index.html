@@ -13,6 +13,9 @@
     
 
     
+        <meta name="description" content="P1009 [NOIP1998 普及组] 阶乘之和&amp;emsp;&amp;emsp;本题涉及两个大知识点：一是使用代码快速计算阶乘；二是高精度计算。
+&amp;emsp;&amp;emsp;计算阶乘和计算阶乘之和都利用到贪心算法的思想。即计算n!，可以假设(n-1)!已经计算出来，则有n! = (n-1)! * n；同样计算"/>
+    
 
     <!--Author-->
     
@@ -21,10 +24,13 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="洛谷题解"/>
+        <meta property="og:title" content="循环结构"/>
     
 
     <!--Open Graph Description-->
+    
+        <meta property="og:description" content="P1009 [NOIP1998 普及组] 阶乘之和&amp;emsp;&amp;emsp;本题涉及两个大知识点：一是使用代码快速计算阶乘；二是高精度计算。
+&amp;emsp;&amp;emsp;计算阶乘和计算阶乘之和都利用到贪心算法的思想。即计算n!，可以假设(n-1)!已经计算出来，则有n! = (n-1)! * n；同样计算"/>
     
 
     <!--Open Graph Site Name-->
@@ -32,7 +38,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="article"/>
     
 
     <!--Page Cover-->
@@ -51,7 +57,7 @@
 
     <!-- Title -->
     
-    <title>个人辅导 - 洛谷题解</title>
+    <title>循环结构 - 洛谷题解</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -163,114 +169,78 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>个人辅导</h1>
+                <div class="post-heading">
+                    <h1>循环结构</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2021-10-25
+                        
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+<a href="/categories/C-基础/">C++基础</a>
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                </div>
             
-                <div class="post-preview">
-    <a href="/个人辅导/潘政邦/">
-        <h1 class="post-title archive">
-            潘政邦
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-20
-    </p>
-</div>
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/个人辅导/谭士元/">
-        <h1 class="post-title archive">
-            谭士元
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-20
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/个人辅导/邓博今/">
-        <h1 class="post-title archive">
-            邓博今
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-20
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/个人辅导/霍子羲/">
-        <h1 class="post-title archive">
-            霍子羲
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-20
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/个人辅导/阮俊颖/">
-        <h1 class="post-title archive">
-            阮俊颖
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-20
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/个人辅导/麦子晴/">
-        <h1 class="post-title archive">
-            麦子晴
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2021-10-20
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h2 id="P1009-NOIP1998-普及组-阶乘之和"><a href="#P1009-NOIP1998-普及组-阶乘之和" class="headerlink" title="P1009 [NOIP1998 普及组] 阶乘之和"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1009">P1009 [NOIP1998 普及组] 阶乘之和</a></h2><p>&emsp;&emsp;本题涉及两个大知识点：一是使用代码快速计算阶乘；二是高精度计算。</p>
+<p>&emsp;&emsp;<strong>计算阶乘</strong>和<strong>计算阶乘之和</strong>都利用到贪心算法的思想。即计算<code>n!</code>，可以假设<code>(n-1)!</code>已经计算出来，则有<code>n! = (n-1)! * n</code>；同样计算<code>(n-1)!</code>则有<code>(n-1)! = (n-2)! * (n-1)</code>……。类似的，计算<strong>n的阶乘之和</strong>，可以假设<strong>n-1 的阶乘之和已经得到</strong>，则有<code>n的阶乘之和 = n-1的阶乘之和 + n!</code>……。</p>
+<p>&emsp;&emsp;由于C++中整型数据类型的最大长度为64位（最大值为9223372036854775807），对于超过这个数的数值都会发生溢出而导致得不到正确结果。对于要计算更大的数值，常常采用数组存储与计算的方式实现，这就是<strong>高精度计算的核心思想</strong>。这个计算思想其实并不复杂，在我们小学第一次接触列竖式计算加法时就已经采用了这种思想。具体做法如下：</p>
+<ul>
+<li>数组的每个下标代表一个位。0号下标为个位；1号小标为十位；2号下标为百位……</li>
+<li>计算加法过程中，将两个加数分别放于两个数组中，然后相同下标位置的两个数值进行相加，<strong>结果超过10的就要进位</strong>。</li>
+<li>最终结果存放于一个新数组，输出时从最高位输出。</li>
 </ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
         </div>
     </div>
-</div>
-
+</article>
 
     <!-- Footer -->
     <hr />
