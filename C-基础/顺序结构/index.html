@@ -318,6 +318,19 @@
 <h2 id="上学迟到"><a href="#上学迟到" class="headerlink" title="上学迟到"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5707">上学迟到</a></h2><h2 id="成绩"><a href="#成绩" class="headerlink" title="成绩"></a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3954">成绩</a></h2><p>&emsp;&emsp;比较简单，使用加法和乘法运算完成，且题目要求下不会出现小数点。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> A, B, C;</span><br><span class="line">    cin &gt;&gt; A &gt;&gt; B &gt;&gt; C;</span><br><span class="line">    cout &lt;&lt; A * <span class="number">0.2</span> + B * <span class="number">0.3</span> + C * <span class="number">0.5</span> &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>从输入<code>t</code>的值区分，可分为<code>t=0</code> 和 <code>t!=0</code>两种情况</p>
+<ul>
+<li>当 <code>t = 0</code> 时，结果输出0；</li>
+<li>当 <code>t != 0</code> 时，又可根据s的大小分为 <code>s &gt; t * m</code> 和 <code>s &lt; t * m</code><ul>
+<li>当 <code>s &gt; t * m</code>时，剩余完整苹果数也是0。</li>
+<li>当 <code>s &lt; t * m</code>时，根据是否有吃到一半的苹果，可分为<ul>
+<li>有吃到一半，结果为 <code>m - s / t - 1</code></li>
+<li>没有吃到一半，结果为 <code>m - s / t</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
                 
